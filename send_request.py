@@ -4,7 +4,7 @@ url = 'https://api.vvhan.com/api/text/joke?type=json'  # 替换为你要请求�
 
 # 发送 GET 请求
 response = requests.get(url)
-print(reponse)
+print(response )
 if response.status_code == 200:
     print('请求成功！')
     data = response.json()  # 解析响应数据
