@@ -10,12 +10,12 @@ data = {
 }
 
 # 发送 POST 请求
-response = requests.post(url, data)
+response = requests.post(url, data=data)
 print(response)
 
-if response.status_code == 200:
-    print('请求成功！')
-    response_data = response.json()  # 解析响应数据
-    print(response_data)
-else:
-    print('请求失败，状态码：', response.status_code)
+# if response.status_code == 200:
+#     print('请求成功！')
+#     response_data = response.json()  # 解析响应数据
+#     print(response_data)
+# else:
+#     print('请求失败，状态码：', response.status_code)
